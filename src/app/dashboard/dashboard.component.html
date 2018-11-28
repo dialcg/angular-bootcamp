@@ -1,0 +1,10 @@
+<h1>Dashboard</h1>
+{{selectedImage}}
+<ul>
+    <app-card
+        *ngFor="let imageUrl of imageUrls"
+        [imageUrl]="imageUrl"
+        (selectedImageUrl)="showSelectedImage($event)"></app-card>
+</ul>
+
+    
